@@ -70,11 +70,11 @@ code {
 
 }
 
-.hide{
+/* .hide{
   transform: translateY(-12%);
   filter: blur(25px);
   transition: 1s all ease;
-}
+} */
 
 .show{
   opacity: 1;

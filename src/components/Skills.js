@@ -2,28 +2,28 @@ import React from "react";
 import { useEffect,useRef } from "react";
 
 const Skills = () => {
-    const observer = useRef(null);
+  //   const observer = useRef(null);
 
-  useEffect(() => {
-    observer.current = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        console.log(entry);
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        } else {
-          // entry.target.classList.remove('show');
-        }
-      });
-    });
+  // useEffect(() => {
+  //   observer.current = new IntersectionObserver((entries) => {
+  //     entries.forEach((entry) => {
+  //       console.log(entry);
+  //       if (entry.isIntersecting) {
+  //         entry.target.classList.add('show');
+  //       } else {
+  //         // entry.target.classList.remove('show');
+  //       }
+  //     });
+  //   });
 
-    const hiddenElements = document.querySelectorAll('.hide');
-    hiddenElements.forEach((el) => observer.current.observe(el));
+  //   const hiddenElements = document.querySelectorAll('.hide');
+  //   hiddenElements.forEach((el) => observer.current.observe(el));
 
-    // Clean up the observer when component unmounts
-    return () => {
-      observer.current.disconnect();
-    };
-  }, []);
+  //   // Clean up the observer when component unmounts
+  //   return () => {
+  //     observer.current.disconnect();
+  //   };
+  // }, []);
   return (
     <div className="p-[100px] mt-[150px]">
       <h1 className="text-center text-[32px] font-semibold">Skills</h1>

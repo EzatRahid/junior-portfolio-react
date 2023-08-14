@@ -1,5 +1,7 @@
 import React from 'react'
 
+import ezo from './assets/assets/Ezo.png'
+
 const Navbar = () => {
   return (
     <div className=' z-[10000] shadow sticky top-0 bg-white'>
