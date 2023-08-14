@@ -1,5 +1,6 @@
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 import { useEffect,useRef } from "react";
@@ -7,28 +8,6 @@ import { useEffect,useRef } from "react";
 
 
 function App() {
-  const observer = useRef(null);
-
-  useEffect(() => {
-    observer.current = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        console.log(entry);
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        } else {
-          // entry.target.classList.remove('show');
-        }
-      });
-    });
-
-    const hiddenElements = document.querySelectorAll('.hide');
-    hiddenElements.forEach((el) => observer.current.observe(el));
-
-    // Clean up the observer when component unmounts
-    return () => {
-      observer.current.disconnect();
-    };
-  }, []);
 
   return (
     
@@ -36,6 +15,7 @@ function App() {
   <Navbar/>
   <Main/>
   <Skills/>
+  <Projects/>
 </div>
   );
 }

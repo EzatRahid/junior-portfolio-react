@@ -9,7 +9,7 @@ const Navbar = () => {
         <li className='hover:text-[#ccc] transition-[0.7s] '>home</li>
         <li className='hover:text-[#ccc] transition-[0.7s] '>skills</li>
         <li className='hover:text-[#ccc] transition-[0.7s] '>projects</li>
-        <li className='text-white button transition-[0.7s] bg-[#00CE22] rounded px-8 py-3'>contact</li>
+        <li className='text-white button transition-[0.7s] bg-[#00CE22] rounde  px-8 py-3'>contact</li>
       </ul>
         </div>
     </div >
