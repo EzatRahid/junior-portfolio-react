@@ -3,7 +3,7 @@ import weather from './assets/assets/weatherapp.PNG'
 
 const Projects = () => {
   return (
-    <div className="p-[100px] mt-[150px] bg-[#f7f7f7ff]">
+    <div className="p-[100px] mt-[150px] bg-[#f7f7f7ff]" id='projects'>
       <div className="text-center">
         <h1 className='text-[32px] font-semibold mb-10'>Projects</h1>
       </div>
