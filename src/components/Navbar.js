@@ -23,8 +23,8 @@ const Navbar = () => {
         <li className='hidden hover:text-[#ccc] transition-[0.7s] sm:block '><a href="#projects">projects</a></li>
         <li className='hidden text-white button transition-[0.7s] sm:block bg-[#1d9371] rounde  px-8 py-3'>contact</li>
         <li className="block text-black sm:hidden"><BiMenu className='text-[40px]' onClick={toggleMenu}/>
-        <div className={`bg-[#1d9371] ${menuVisible ? 'block' : 'hidden'} duration-300 RollIn relative rounded flex justify-center`}>
-            <ul className=' flex flex-col gap-5 bg-[#1d9371] p-4 text-white absolute'>
+        <div className={`bg-[#1d9371] ${menuVisible ? 'block' : 'hidden'} duration-300  relative flex justify-center`}>
+            <ul className=' flex flex-col gap-5 bg-[#1d9371] p-4 text-white absolute rounded-[10px] RollIn RollOut'>
               <li className='hover:text-[#ccc]'><a href="#home">home</a></li>
               <li className='hover:text-[#ccc]'><a href="#projects">projects</a></li>
               <li className='hover:text-[#ccc]'>contact</li>

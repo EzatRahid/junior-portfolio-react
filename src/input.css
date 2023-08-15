@@ -85,8 +85,26 @@ code {
   transform: translateY(0);
 }
 
+.RollIn{
+  animation: RollIn 0.5s ;
+}
+
+.RollOut{
+  animation: RollOut 0.5s;
+}
+
 @keyframes RollIn{
-  0%{
+  from{
+    height: 0%;
+  }
+
+to{
+  height: 100%;
+}
+
+}
+@keyframes RollOut{
+  100%{
     height: 0%;
   }
 
@@ -94,7 +112,9 @@ code {
     height: 50%;
   }
 
-  100%{
+  0%{
     height: 100%;
   }
+
 }
+
